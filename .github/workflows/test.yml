@@ -7,6 +7,6 @@ jobs:
 
     steps:
       - name: install ffmpeg
-        run: sudo add-apt-repository ppa:ubuntuhandbook1/ffmpeg7 -y;sudo apt update;sudo apt install ffmpeg -y -qq > /dev/null
+        run: sudo add-apt-repository ppa:ubuntuhandbook1/ffmpeg7 -y -qq > /dev/null;sudo apt update -qq > /dev/null;sudo apt install ffmpeg -y -qq > /dev/null
       - name: live stream
         run: ffmpeg
